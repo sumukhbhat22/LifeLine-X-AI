@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <!-- Medical cross -->
+  <rect x="22" y="12" width="20" height="40" rx="3" fill="white"/>
+  <rect x="12" y="22" width="40" height="20" rx="3" fill="white"/>
+  <!-- Ambulance siren hint -->
+  <circle cx="32" cy="32" r="6" fill="#dc2626"/>
+  <circle cx="32" cy="32" r="3" fill="white"/>
+</svg>

@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 6%;
+    --foreground: 200 100% 95%;
+
+    --card: 222 47% 9%;
+    --card-foreground: 200 100% 95%;
+
+    --popover: 222 47% 9%;
+    --popover-foreground: 200 100% 95%;
+
+    --primary: 187 100% 50%;
+    --primary-foreground: 222 47% 6%;
+
+    --secondary: 222 30% 16%;
+    --secondary-foreground: 200 100% 90%;
+
+    --muted: 222 30% 14%;
+    --muted-foreground: 215 20% 55%;
+
+    --accent: 187 100% 50%;
+    --accent-foreground: 222 47% 6%;
+
+    --destructive: 0 85% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 222 30% 18%;
+    --input: 222 30% 18%;
+    --ring: 187 100% 50%;
+
+    --radius: 0.75rem;
+
+    --ambulance: 0 85% 55%;
+    --ambulance-glow: 0 100% 60%;
+    --heatmap-green: 142 70% 45%;
+    --heatmap-yellow: 45 100% 55%;
+    --heatmap-red: 0 85% 55%;
+    --neon-cyan: 187 100% 50%;
+    --neon-cyan-dim: 187 80% 30%;
+
+    --sidebar-background: 222 47% 8%;
+    --sidebar-foreground: 200 100% 90%;
+    --sidebar-primary: 187 100% 50%;
+    --sidebar-primary-foreground: 222 47% 6%;
+    --sidebar-accent: 222 30% 16%;
+    --sidebar-accent-foreground: 200 100% 90%;
+    --sidebar-border: 222 30% 18%;
+    --sidebar-ring: 187 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@keyframes pulse-red {
+  0%, 100% { filter: drop-shadow(0 0 8px hsl(0 85% 55% / 0.8)); }
+  50% { filter: drop-shadow(0 0 20px hsl(0 100% 60% / 1)) drop-shadow(0 0 40px hsl(0 85% 55% / 0.5)); }
+}
+
+@keyframes flash-siren {
+  0%, 49% { fill: hsl(0 85% 55%); }
+  50%, 100% { fill: hsl(220 100% 60%); }
+}
+
+@keyframes cascade-glow {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
