@@ -158,7 +158,11 @@ npm run lint
 
 This project is open source and available under the [MIT License](LICENSE).
 
----
+Team members:
+Sumukh Bhat 
+Varadendra R Kalakeri(https://github.com/Varadendra97)
+Roshan C
+Sumukh S
 
 ## 👤 Author
 
